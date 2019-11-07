@@ -18,7 +18,7 @@ export default {
     .sk-wave {
         margin: 40px auto;
         #width: 50px;
-        width: 440px;
+        width: 450px;
         height: 40px;
         border-radius: 8px;
         text-align: center;
