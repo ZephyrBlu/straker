@@ -53,7 +53,7 @@ export default {
         },
         handleUserSelection(userId) {
             this.$data.selectedUserPosts = this.$data.postData[userId];
-            this.$data.selectedUserName = this.$data.userData[userId].name;
+            this.$data.selectedUserName = this.$data.userData[userId - 1].username;
         },
     },
     async created() {
