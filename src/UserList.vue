@@ -1,11 +1,19 @@
 <script>
 import WaveAnimation from './WaveAnimation.vue';
+import BuildingIcon from './icons/BuildingIcon.vue';
+import EmailIcon from './icons/EmailIcon.vue';
+import PhoneIcon from './icons/PhoneIcon.vue';
+import WebsiteIcon from './icons/WebsiteIcon.vue';
 
 export default {
     name: 'UserList',
     props: ['users'],
     components: {
         WaveAnimation,
+        BuildingIcon,
+        EmailIcon,
+        PhoneIcon,
+        WebsiteIcon,
     },
 };
 </script>
@@ -26,18 +34,21 @@ export default {
                     </button>
                 </span>
                 <h4 class="UserList__text UserList__user-name">{{ user.name }}</h4>
+                <h4 class="UserList__text UserList__user-email">
+                    <EmailIcon></EmailIcon> {{ user.email }}
+                </h4>
                 <h4 class="UserList__text UserList__user-website">
-                    {{ user.email }} &middot;
+                    <WebsiteIcon></WebsiteIcon>
                     <a v-bind:href="'http://'+user.website">{{ user.website }}</a>
                 </h4>
-                <h4 class="UserList__text">
-                    {{ user.phone }}
+                <h4 class="UserList__text UserList__user-phone">
+                    <PhoneIcon></PhoneIcon> {{ user.phone }}
                 </h4>
                 <h3 class="UserList__company">
                     Works at {{ user.company.name }}
                 </h3>
                 <h5 class="UserList__text UserList__slogan">
-                    {{ user.company.catchPhrase }}
+                    <BuildingIcon></BuildingIcon> {{ user.company.catchPhrase }}
                 </h5>
             </li>
         </ul>
@@ -46,6 +57,10 @@ export default {
 </template>
 
 <style>
+    svg {
+        fill: #23282c;
+    }
+
     .UserList {
         grid-area: users;
         overflow-y: auto;
@@ -113,5 +128,6 @@ export default {
     .UserList__slogan {
         font-size: 12px;
         font-style: italic;
+        margin-top: 6px;
     }
 </style>
