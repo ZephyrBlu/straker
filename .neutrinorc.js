@@ -5,7 +5,7 @@ module.exports = {
     ['@neutrinojs/airbnb-base', {
       eslint: {
         rules: {
-          "linebreak-style": ["error", "windows"],
+          "linebreak-style": ["error", "unix"],
           "indent": ["error", 4, { "SwitchCase": 1 }],
           "no-console": "off",
           "max-len": 0,
