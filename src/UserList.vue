@@ -57,6 +57,7 @@ export default {
 
     .UserList__user-list {
         padding: 0;
+        width: max-content;
     }
 
     .UserList__see-posts {
@@ -94,7 +95,6 @@ export default {
     }
 
     .UserList__username:hover {
-        cursor: pointer;
         text-decoration: underline;
     }
 

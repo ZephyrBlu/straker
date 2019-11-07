@@ -78,7 +78,7 @@ export default {
 <style>
     .App {
         display: grid;
-        grid-template-columns: max-content 1fr;
+        grid-template-columns: 450px 1fr;
         grid-template-areas: 'users posts';
         height: 100vh;
     }
@@ -96,6 +96,6 @@ export default {
 
     div::-webkit-scrollbar-thumb {
         background: hsla(0, 0%, 20%, 0.6);
-        border-radius: 5px;
+        border-radius: 8px;
     }
 </style>
