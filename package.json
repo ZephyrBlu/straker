@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint"
+  },
+  "dependencies": {
+    "@coreui/coreui": "^2.1.16",
+    "purgecss": "^1.4.1",
+    "purgecss-webpack-plugin": "^1.6.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb-base": "^8.3.0",
+    "@neutrinojs/vue": "^8.3.0",
+    "neutrino": "^8.3.0"
+  }
+}
